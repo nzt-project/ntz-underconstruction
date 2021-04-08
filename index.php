@@ -15,8 +15,8 @@
 
 	<!-- Link -->
 	<script type="text/javascript" src="js/main.js"></script>
-	<link rel="shortcut icon" href="images/photo_2021-04-06_23-22-28.jpg">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/nzt-blank.jpg">
 </head>
 <body>
 	<div class="bg"></div>
