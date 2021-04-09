@@ -20,9 +20,10 @@
 </head>
 <body>
 	<div class="bg"></div>
+	
 	<img src="images/nzt-48-transparent-white.png" class="leftImage" />
-	<img src="images/under-construction.png" class="centeredImage" />
 	<div id="container">
+		<div><img src="images/under-construction.png" class="centeredImage"/></div>
 		<div class="button" id="button">
 			<div id="underline"></div>
 			<a href=" https://t.me/joinchat/R-PfpxFhiaY3ZTc0">Telegram</a>
