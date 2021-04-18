@@ -630,13 +630,13 @@ header nav .lang a.active{
 .logoLeft {
     position:absolute; 
     left:12%; 
-    top: 85%;
+    top: 81%;
 }
 
 .logoRight {
     position: absolute;
     right: 20%;
-    top: 100%;
+    top: 95%;
 }
 
     .scheme {
@@ -1269,6 +1269,7 @@ footer .contact{
     width: 100%;
     margin: 0 0 16px 0;
 }
+
     .roadmap{
     border-collapse: initial;
     border-spacing: initial;
@@ -1302,7 +1303,8 @@ footer .contact{
         width: 100%
     }
 
-    header nav{display: none;position: absolute;top: 80px;left: 0;width: 100%;background: #13161D;padding: 0px 20px;z-index: 9;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;}
+    header{ height:100px;}
+    header nav{display: none;position: absolute;top: 80px;left: 0;width: 100%;background: #000000;padding: 0px 20px;z-index: 9;border-bottom-left-radius: 8px;border-bottom-right-radius: 8px;}
     header nav a{
     display: block;
     padding: 6px 0;
@@ -1338,7 +1340,7 @@ footer .contact{
 }
     header .logo{display: block;margin: 10px 0;}
         header .logo img {
-           /* width: 60px;*/
+            width: 130px;
             height: 70px;
             display: inline-block;
             margin-right: 12px;
@@ -1393,13 +1395,6 @@ footer .contact{
 
 @media only screen and (max-width: 1464px){
 
-    /*.logoLeft {
-        visibility: hidden;
-    }
-
-    .logoRight {
-        visibility: hidden;
-    }*/
 }
 
 
