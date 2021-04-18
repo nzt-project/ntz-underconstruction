@@ -36,7 +36,7 @@ header nav{}
         font-weight: normal;
         font-size: 18px;
         line-height: 22px;
-        color: #3D3D3D !important;
+        color: #ffffff !important;
         display: inline-block;
         margin-right: 26px;
         text-decoration: none !important;
@@ -65,7 +65,7 @@ header nav a.uniswap:hover{
 }
 
 header .mainLogo img {
-    height: 95px;
+    height: 70px;
 }
 
 header nav a.uniswap{
@@ -87,12 +87,17 @@ header nav .lang a.active{
 }
 
 .textRed {
-    color: #FF3939 !important
+    color: #FF3939 !important;
+}
+
+.text-right .textRed {
+    color: #FF3939;
 }
 
 .fold {
     margin-bottom: 60px;
     padding-top: 76px;
+    margin-top: 100px;
 }
 .fold .logo{}
 .fold h1{
@@ -110,7 +115,7 @@ header nav .lang a.active{
         padding-left: 30px;
         font-size: 24px;
         line-height: 22px;
-        color: #3D3D3D !important;
+        color: #ffffff !important;
         display: inline-block;
         /*margin-right: 26px;*/
         text-decoration: none !important;
@@ -621,22 +626,34 @@ header nav .lang a.active{
         margin: 0;
     }
 
-.scheme {
-    vertical-align: middle;
-    position: relative;
-    line-height: 24px;
-    letter-spacing: .2px;
-    margin-bottom: 35px
+.logoLeft {
+    position:absolute; 
+    left:12%; 
+    top: 85%;
 }
 
-    .scheme h2 {
+.logoRight {
+    position: absolute;
+    right: 20%;
+    top: 100%;
+}
+
+    .scheme {
+        vertical-align: middle;
+        position: relative;
+        line-height: 24px;
+        letter-spacing: .2px;
+        margin-bottom: 35px;
+        color: #ffffff;
+    }
+
+    .scheme h4 {
         margin-bottom: 39px;
         padding-left: 70px
     }
 
-.scheme-one h2:before,
-.scheme-two h2:before,
-.scheme-tree h2:before{
+.scheme-one h4:before,
+.scheme-two h4:before{
     content: '';
     width: 42px;
     height: 42px;
@@ -644,22 +661,16 @@ header nav .lang a.active{
     background-repeat: no-repeat
 }
 
-.scheme-one h2:before {
-    background-image: url('../images/fire.svg');
+.scheme-one h4:before {
+    background-image: url('../images/—группировать 3.svg');
     top: 0;
     left: 0px
 }
 
-.scheme-two h2:before {
-    background-image: url('../images/fire.svg');
+.scheme-two h4:before {
+    background-image: url('../images/—группировать 4.svg');
     top: 5px;
     left: 0
-}
-
-.scheme-three h2:before {
-    background-image: url('../images/fire.svg');
-    top: 0px;
-    left: 0px
 }
 
 .tokenomics {
@@ -1058,10 +1069,14 @@ footer .contact{
 }
 
 .fold-hb {
-    background: url('../images/cb-bg.jpg') no-repeat center center;
+    background: url('../images/main screen.svg') no-repeat center center;
     background-size: cover;
-    padding: 36px 0;
+    padding: 350px 0;
+    /*height: 700px;
+    background-repeat: no-repeat;*/
+    background-size: 80%;
 }
+
 .fold-hb .details .cta{
     text-decoration: none !important;
     width: 202px;
@@ -1075,7 +1090,7 @@ footer .contact{
     font-weight: 500;
     font-size: 22px;
     line-height: 27px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16);
     display: block;
     text-align: center;
@@ -1099,6 +1114,27 @@ footer .contact{
 .fold-hb h3 strong{
     font-weight: 600;
 }
+
+.fold-hb h2 {
+        font-weight: normal;
+        margin: 0 0 19px 0;
+        padding-left: 30px;
+        font-size: 24px;
+        line-height: 22px;
+        color: #ffffff !important;
+        display: inline-block;
+        /*margin-right: 26px;*/
+        text-decoration: none !important;
+        -webkit-transition: all .25s ease;
+        -o-transition: all .25s ease;
+        transition: all .25s ease;
+}
+
+.fold-hb h2 i {
+     font-weight: 600;
+     font-style: normal;
+}
+
 .fold-hb .ann{
     font-size: 18px;
     line-height: 22px;
@@ -1111,7 +1147,7 @@ footer .contact{
 .fold-hb h4{
     font-size: 16px;
     line-height: 22px;
-    color: #ffffffad;
+    color: #ffffff;
     text-align: right;
     margin: 0 0 8px 0;
 }
@@ -1119,7 +1155,7 @@ footer .contact{
     font-size: 16px;
     line-height: 27px;
     text-align: right;
-    color: #FFFFFF;
+    color: #ffffff;
     margin: 0;
     display: block;
 }
@@ -1354,66 +1390,176 @@ footer .contact{
 
 }
 
-@media only screen and (max-width: 768px) {
-    .fold-hb .details .cta{
-    float: none;
-    margin: 16px 0 24px;
-}
-    .fold-hb .details{
-    margin-top: 36px;
-}
-    .fold-hb{
-    background-position: center left;
-    padding-bottom: 12px;
-}
-    .fold-hb h4{
-    text-align: left;
-}
-    .fold-hb span{
-    text-align: left;
-    margin-bottom: 24px;
-}
-    .litepaper .lang{
-    width: calc(50% - 14px);
-}
-    
-    .audit .audit-link{width:100%;height: auto;}
-    .audit .list{width: 95%;}
-    .audit .audit-link img{
-    width: 64px;
-}
-    .audit .audit-link span{}
-    .audit .list .item span{
-    font-size: 14px;
-    width: calc(100% - 32px);
-    line-height: 17px;
-}
-    .container{padding: 0 16px;}
-    .fold .logo{}
-    .fold h2{font-size: 22px;}
-    .tokenomics .pool{}
-    .tokenomics .metrics h3{font-size: 14px;line-height: initial;}
-    .tokenomics .metrics h4{font-size: 20px;line-height: initial;}
-    .section-headline{}
-    .proofs a span{}
-    .proofs a{margin: 0 0 20px 0 !important;width: 100%;}
-    .community a span{}
-    .community a{padding: 14px 16px;margin-right: 16px;margin-bottom: 16px;}
-    .help a span{font-size: 18px;width: calc(100% - 34px);}
-    .breed .img-holder p{font-size: 16px;line-height: 20px;}
-    .fold .address a i{float: none;margin: 8px 0 0;display: block;padding: 16px;text-align: center;}
-    .fold .address a span{display: block;text-align: center;}
-    .help a{width: 100%;}
-    .help a img{width: 34px;margin-left: 0;}
-    .fold .address a{padding: 16px;width: 100%;}
-    .fold .address h3{text-align:center;padding:0;}
-    .fold .ctas a{
-    width: 100%;
-    margin-bottom: 12px;
-    text-align: center;
-}
-    .community a{width: 60%;margin: 0 auto 12px !important;max-width: 100%;text-align: left;height: auto;}
+@media only screen and (max-width: 1464px){
 
+    .logoLeft {
+        visibility: hidden;
+    }
+
+    .logoRight {
+        visibility: hidden;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .fold-hb .details .cta {
+        float: none;
+        margin: 16px 0 24px;
+    }
+
+    .fold-hb .details {
+        margin-top: 36px;
+    }
+
+    .fold-hb {
+        background-position: center left;
+        padding-bottom: 12px;
+        background-size: auto;
+    }
+
+        .fold-hb h4 {
+            text-align: left;
+        }
+
+        .fold-hb span {
+            text-align: left;
+            margin-bottom: 24px;
+        }
+
+    .litepaper .lang {
+        width: calc(50% - 14px);
+    }
+
+    .logoLeft {
+        visibility: hidden;
+    }
+
+    .logoRight {
+        visibility: hidden;
+    }
+
+    .audit .audit-link {
+        width: 100%;
+        height: auto;
+    }
+
+    .audit .list {
+        width: 95%;
+    }
+
+    .audit .audit-link img {
+        width: 64px;
+    }
+
+    .audit .audit-link span {
+    }
+
+    .audit .list .item span {
+        font-size: 14px;
+        width: calc(100% - 32px);
+        line-height: 17px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .fold .logo {
+    }
+
+    .fold h2 {
+        font-size: 22px;
+    }
+
+    .tokenomics .pool {
+    }
+
+    .tokenomics .metrics h3 {
+        font-size: 14px;
+        line-height: initial;
+    }
+
+    .tokenomics .metrics h4 {
+        font-size: 20px;
+        line-height: initial;
+    }
+
+    .section-headline {
+    }
+
+    .proofs a span {
+    }
+
+    .proofs a {
+        margin: 0 0 20px 0 !important;
+        width: 100%;
+    }
+
+    .community a span {
+    }
+
+    .community a {
+        padding: 14px 16px;
+        margin-right: 16px;
+        margin-bottom: 16px;
+    }
+
+    .help a span {
+        font-size: 18px;
+        width: calc(100% - 34px);
+    }
+
+    .breed .img-holder p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .fold .address a i {
+        float: none;
+        margin: 8px 0 0;
+        display: block;
+        padding: 16px;
+        text-align: center;
+    }
+
+    .fold .address a span {
+        display: block;
+        text-align: center;
+    }
+
+    .help a {
+        width: 100%;
+    }
+
+        .help a img {
+            width: 34px;
+            margin-left: 0;
+        }
+
+    .fold .address a {
+        padding: 16px;
+        width: 100%;
+    }
+
+    .fold .address h3 {
+        text-align: center;
+        padding: 0;
+    }
+
+    .fold .ctas a {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .community a {
+        width: 60%;
+        margin: 0 auto 12px !important;
+        max-width: 100%;
+        text-align: left;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width : 480px) {
