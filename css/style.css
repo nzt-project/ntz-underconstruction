@@ -639,14 +639,15 @@ header nav .lang a.active{
     top: 95%;
 }
 
-    .scheme {
-        vertical-align: middle;
-        position: relative;
-        line-height: 24px;
-        letter-spacing: .2px;
-        margin-bottom: 35px;
-        color: #ffffff;
-    }
+.scheme {
+    vertical-align: middle;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: .2px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    margin-top: 50px;
+}
 
     .scheme h4 {
         margin-bottom: 39px;
@@ -656,22 +657,32 @@ header nav .lang a.active{
 .scheme-one h4:before,
 .scheme-two h4:before{
     content: '';
-    width: 42px;
-    height: 42px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     background-repeat: no-repeat
 }
 
 .scheme-one h4:before {
-    background-image: url('../images/—группировать 3.svg');
-    top: 0;
-    left: 0px
+    background-image: url('../images/fire.png');
+    top: -20px;
+    left: -30px;
+    background-size: 80px 80px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    content: "";
 }
 
 .scheme-two h4:before {
-    background-image: url('../images/—группировать 4.svg');
-    top: 5px;
-    left: 0
+    background-image: url('../images/rombi.png');
+    top: -20px;
+    left: -20px;
+    background-size: 70px 70px;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    content: "";
 }
 
 .tokenomics {
