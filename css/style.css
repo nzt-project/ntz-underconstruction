@@ -881,7 +881,7 @@ footer .logo img{
     height: 100px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 26px;
+    /*margin-right: 26px;*/
 }
 footer .logo span{
     display: inline-block;
