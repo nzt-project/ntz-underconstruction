@@ -1,26 +1,29 @@
 
 @font-face {
-    font-family:"Gilroy";
-    src:url("../fonts/Gilroy-Medium.woff2") format("woff2"),url("../fonts/Gilroy-Medium.woff") format("woff"),url("../fonts/Gilroy-Medium.otf") format("opentype");
-    font-style:normal;font-weight:400;
+    font-family: "Cera Pro";
+    src: url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 400;
 }
 
 @font-face {
-    font-family:"Gilroy";
-    src:url("../fonts/Gilroy-Semibold.woff2") format("woff2"),url("../fonts/Gilroy-Semibold.woff") format("woff"),url("../fonts/Gilroy-Semibold.otf") format("opentype");
-    font-style:normal;font-weight:500;
+    font-family: "Cera Pro";
+    src: url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 500;
 }
 
 @font-face {
-    font-family:"Gilroy";
-    src:url("../fonts/Gilroy-Bold.woff2") format("woff2"),url("../fonts/Gilroy-Bold.woff") format("woff"),url("../fonts/Gilroy-Bold.otf") format("opentype");
-    font-style:normal;font-weight:600;
+    font-family: "Cera Pro";
+    src: url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("otf"),url("../fonts/Cera Pro Regular.otf") format("opentype");
+    font-style: normal;
+    font-weight: 600;
 }
 
 html {-webkit-font-smoothing: antialiased;}
 img{display: block;max-width: 100%;height: auto;}
 body {
-    font-family: 'Gilroy', Helvetica, sans-serif;
+    font-family: 'Cera Pro', Helvetica, sans-serif;
     background: #000000;
     color: #ffffff;
 }
@@ -179,6 +182,18 @@ footer .logo img{
 }
 header .logo{display: none;}
 header .hamburger-icon{display: none;}
+
+footer .contact {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+    display: inline-block;
+    margin: 38px 0 0 0;
+    text-decoration: none !important;
+    text-align: right;
+    float: right;
+}
 
 
 .fold-hb {
