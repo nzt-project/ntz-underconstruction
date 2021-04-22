@@ -339,19 +339,27 @@ footer .logo img{
 header .logo{display: none;}
 header .hamburger-icon{display: none;}
 
+.fold-hb .container {
+    border: 4px solid red;
+    position: relative;
+    background: url('../images/main screen.svg')no-repeat;
+    background-size: 100%;
+    height: 650px;
+}
 
 .fold-hb {
-    background: url('../images/main screen.svg') no-repeat center center;
-    background-size: cover;
-    padding: 350px 0;
+    /*background: url('../images/main screen.svg') no-repeat center center;*/
+    /* background-size: cover;*/
+    /*background-size: 100% auto;*/
+    /*padding: 350px 0;*/
     /*height: 700px;
     background-repeat: no-repeat;*/
-    background-size: 80%;
+    /*background-size: 80%;*/
 }
-
-.fold-hb .logo{
-    width: 206px;
-}
+    
+    .fold-hb .logo {
+        width: 206px;
+    }
 .fold-hb .details{
     margin-top: 82px;
 }
@@ -610,6 +618,14 @@ header .hamburger-icon{display: none;}
     .becomeaddict .ctas a:last-child {
         margin:15px 50px 0px 0px;
     }
+
+    .fold-hb .container {
+        border: 4px solid red;
+        position: relative;
+        background: url('../images/main screen.svg')no-repeat;
+        background-size: 100%;
+        height: 550px;
+    }
 }
 
 @media only screen and (min-width : 992px){
@@ -671,6 +687,8 @@ header .hamburger-icon{display: none;}
     header .container{position:relative;}
     .fold h2{
     padding-left: 0;
+
+
 }
     
 .fold{
@@ -687,6 +705,18 @@ header .hamburger-icon{display: none;}
     margin: 40px auto 0;
     float: none;
 }
+
+    /*.fold-hb .container {
+        background-image: url('images/main screen.svg') !important;
+        height: 1000px !important;
+    }*/
+
+    .fold-hb .container {
+        border: 4px solid red;
+        position: relative;
+        background-image: none;
+        height: auto;
+    }
 
     #partners {
         margin-bottom: 80px;
@@ -745,6 +775,8 @@ header .hamburger-icon{display: none;}
         background-size: 85%;
         top: 3920px
     }
+
+
 }
 
 @media only screen and (max-width: 1464px){
@@ -754,11 +786,11 @@ header .hamburger-icon{display: none;}
 
 @media only screen and (max-width: 768px) {
 
-    .fold-hb {
+    /*.fold-hb {
         background-position: center left;
         padding-bottom: 12px;
         background-size: auto;
-    }
+    }*/
 
         .fold-hb h4 {
             text-align: left;
