@@ -48,13 +48,35 @@ header nav{}
 header nav a:hover{opacity:0.6;}
     header nav .left {
         display: inline-block;
-        margin: 26px 0;
+        margin: 36px 0;
     }
     header nav .right {
         float: right;
-        margin: 60px 0;
+        margin: 50px 0;
     }
-header nav .colored{color: #FB743E !important}
+
+        header nav .right .menuBtn {
+            background-color: #000000;
+            border: solid;
+            border-radius: 50px 50px 50px 50px;
+            border-width: 1px;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+header nav .right button:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02)
+}
+
+header nav .colored {
+    color: #FB743E !important
+}
 
 header .mainLogo img {
     height: 70px;
@@ -103,9 +125,135 @@ header .mainLogo img {
     font-style: normal;
 }
 
+.becomeaddict {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.becomeaddict .ctas {
+    padding-left: 30px;
+    margin-bottom: 28px;
+}
+
+.becomeaddict .ctas .pancakeswap {
+    padding: 14px 24px 12px 24px !important;
+    min-width: 200px;
+}
+
+.becomeaddict .ctas h3 {
+    color: #FFFFFF;
+    opacity: .5;
+}
+
+.becomeaddict .ctas .pancakeswap {
+    text-align: center;
+    color: #000000;
+    padding: 16px 32px;
+    background: #fff;
+    border-radius: 50px;
+    opacity: 1;
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.becomeaddict .ctas .pancakeswap:hover {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02)
+}
+
+.becomeaddict .ctas a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 16px;
+    text-decoration: none !important;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.becomeaddict .ctas a:last-child {
+    margin-right: 0;
+}
+
+.becomeaddict .address div {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.address .logo {
+     height: 75px;
+}
+
+.address div h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    margin: 20px 0 0;
+    text-align: left;
+    display: block;
+    padding: 14px 0 0 0;
+    display: inline-block;
+}
+
+.address div p {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    font-style: normal;
+    padding: 14px 16px 0 0;
+    margin: 12px 0 0;
+    cursor: pointer;
+}
+
+.address .contract-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 20px 0 0;
+    /*display: inline-block;*/
+}
+
+.address .copy-to-clipboard {
+    padding: 16px 20px;
+    display: block;
+}
+
+.address .copy-to-clipboard i {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        font-style: normal;
+        padding: 14px 16px;
+        display: block;
+        margin: 12px 0 0;
+        cursor: pointer;
+}
+
+    .address .copy-to-clipboard a {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        font-style: normal;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+
+.address .copy-to-clipboard i img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 6px;
+}
+
+
 .logoLeft {
-    position:absolute; 
-    left:12%; 
+    position: absolute;
+    left: 12%;
     top: 81%;
 }
 
@@ -151,7 +299,7 @@ header .mainLogo img {
 }
 
 .scheme-two h4:before {
-    background-image: url('../images/rombi.png');
+    background-image: url('../images/needle.svg');
     top: -20px;
     left: -20px;
     background-size: 70px 70px;
@@ -177,6 +325,17 @@ footer .logo img{
     vertical-align: middle;
     /*margin-right: 26px;*/
 }
+    footer .contact {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        display: inline-block;
+        margin: 38px 0 0 0;
+        text-decoration: none !important;
+        text-align: right;
+        float: right;
+    }
 header .logo{display: none;}
 header .hamburger-icon{display: none;}
 
@@ -243,6 +402,192 @@ header .hamburger-icon{display: none;}
     display: block;
 }
 
+.section-headline {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+
+    #partners {
+        text-align: center;
+        font-size: 0;
+        margin-bottom: 120px;
+    }
+
+    #partners a {
+        display: inline-block;
+        width: 350px;
+        height: 164px;
+        margin-right: 30px;
+    }
+
+        #partners a:last-child {
+            margin-right: 0;
+        }
+
+        #partners a > img {
+            margin: 24px auto 16px;
+            height: 80px;
+        }
+
+#pancake {
+    margin: 35px auto 16px !important;
+    height: 50px !important;
+}
+
+.faq {
+    text-align: left;
+    margin-top: 270px
+}
+
+    .faq:after, .faq:before {
+        content: '';
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: bottom;
+        position: absolute;
+        z-index: -1
+    }
+
+    /*.faq:before {*/
+        /*height: 405px;
+        width: 812px;
+        background-position-x: left;
+        top: 3210px;
+        left: 0*/
+    /*}*/
+
+    /*.faq:after {
+        height: 519px;
+        width: 304px;
+        background-position-x: right;
+        top: 2777px;
+        right: 0
+    }*/
+
+    .faq h2 {
+        padding-bottom: 85px;
+        letter-spacing: -1px
+    }
+
+    .faq h4 {
+        font-family: Lato-Light;
+        font-weight: 500
+    }
+
+.faq-btn {
+    border: solid;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 1px;
+    border-color: #ffffff;
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: left;
+    background: #000000;
+    padding: 33px 99px 30px 33px;
+    box-shadow: 0 4px 10px 2px rgba(0,0,0,.1);
+    -webkit-transition-property: background,color,box-shadow;
+    -moz-transition-property: background,color,box-shadow;
+    -o-transition-property: background,color,box-shadow;
+    -ms-transition-property: background,color,box-shadow;
+    transition-property: background,color,box-shadow;
+    -webkit-transition-duration: .5s,.5s,5ms;
+    -moz-transition-duration: .5s,.5s,5ms;
+    -o-transition-duration: .5s,.5s,5ms;
+    -ms-transition-duration: .5s,.5s,5ms;
+    transition-duration: .5s,.5s,5ms;
+    -webkit-transition-timing-function: cubic-bezier(1,0,0,1);
+    -moz-transition-timing-function: cubic-bezier(1,0,0,1);
+    -o-transition-timing-function: cubic-bezier(1,0,0,1);
+    -ms-transition-timing-function: cubic-bezier(1,0,0,1);
+    transition-timing-function: cubic-bezier(1,0,0,1)
+}
+
+    .faq-btn p {
+        font-family: Lato-Black;
+        font-size: 24px;
+        margin: 0
+    }
+
+    .faq-btn h4 {
+        margin: 20px 0 0 0
+    }
+
+    .faq-btn:after, .faq-btn:before {
+        content: '';
+        border-radius: 3px;
+        position: absolute;
+        background-color: #ffffff;
+        -webkit-transition: all .5s cubic-bezier(1,0,0,1);
+        -moz-transition: all .5s cubic-bezier(1,0,0,1);
+        -o-transition: all .5s cubic-bezier(1,0,0,1);
+        -ms-transition: all .5s cubic-bezier(1,0,0,1);
+        transition: all .5s cubic-bezier(1,0,0,1)
+    }
+
+    .faq-btn:after {
+        width: 21px;
+        height: 3px;
+        top: calc(50% - 3px);
+        right: 34px
+    }
+
+    .faq-btn:before {
+        width: 3px;
+        height: 21px;
+        top: calc(50% - 12px);
+        right: 43px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        -ms-transform: rotate(0);
+        transform: rotate(0)
+    }
+
+    .faq-btn:focus, .faq-btn:hover {
+        cursor: pointer;
+        box-shadow: 0 4px 11px 3px rgba(0,0,0,.13)
+    }
+
+    .faq-btn[aria-expanded=true] {
+        background: #000000;
+        box-shadow: none;
+    }
+
+        .faq-btn[aria-expanded=true]:after, .faq-btn[aria-expanded=true]:before {
+            background-color: #ffffff;
+        }
+
+        .faq-btn[aria-expanded=true]:before {
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg)
+        }
+
+#off-screen {
+    visibility: hidden;
+    overflow: hidden;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #000000;
+    color: #ffffff;
+    max-height: 0;
+    -webkit-transition: all .5s cubic-bezier(1,0,0,1);
+    -moz-transition: all .5s cubic-bezier(1,0,0,1);
+    -o-transition: all .5s cubic-bezier(1,0,0,1);
+    -ms-transition: all .5s cubic-bezier(1,0,0,1);
+    transition: all .5s cubic-bezier(1,0,0,1)
+}
+
+[aria-expanded=true] #off-screen {
+    visibility: visible;
+    background: #000000;
+    max-height: 500px
+}
+
 
 @media only screen and (min-width : 1200px) {
     .fold h2{padding-right:100px;}
@@ -250,8 +595,21 @@ header .hamburger-icon{display: none;}
 }
 
 @media only screen and (max-width : 1200px) {
-   
 
+    #partners a {
+        margin-bottom: 20px;
+        width: 300px;
+        margin-right: 20px;
+    }
+
+    .becomeaddict .ctas a {
+        margin-right: 22px;
+        font-size: 18px;
+    }
+
+    .becomeaddict .ctas a:last-child {
+        margin:15px 50px 0px 0px;
+    }
 }
 
 @media only screen and (min-width : 992px){
@@ -330,7 +688,63 @@ header .hamburger-icon{display: none;}
     float: none;
 }
 
+    #partners {
+        margin-bottom: 80px;
+    }
 
+    .becomeaddict .ctas a {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .becomeaddict .ctas {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .fold, .becomeaddict {
+        margin-bottom: 60px;
+    }
+
+    .becomeaddict .ctas a:last-child {
+        margin:0px 0px 0px 0px;
+    }
+
+
+
+    .address div{
+        width: 100%;
+        margin: 0 0 36px 0 !important;
+    }
+
+    .address .logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        display: block;
+    }
+
+    .faq {
+        margin-top: 240px
+    }
+
+    .faq-btn p {
+        font-size: 22px
+    }
+
+    .faq:after {
+        height: 445px;
+        background-size: 85%;
+        top: 3567px
+    }
+
+    .faq:before {
+        height: 345px;
+        width: 100%;
+        background-size: 85%;
+        top: 3920px
+    }
 }
 
 @media only screen and (max-width: 1464px){
@@ -359,14 +773,20 @@ header .hamburger-icon{display: none;}
         padding: 0 16px;
     }
 
-    .fold .logo {
-    }
-
     .fold h2 {
         font-size: 22px;
     }
-    
-}
+
+    #partners a {
+        margin: 0 0 20px 0 !important;
+        width: 100%;
+    }
+
+    .becomeaddict .ctas a {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: center;
+    }
 
 @media only screen and (max-width : 480px) {
 
@@ -375,17 +795,27 @@ header .hamburger-icon{display: none;}
     font-size: 18px;
     line-height: 1.25;
 }
-    .section-headline{}
-    .proofs a span{}
-    .proofs a{}
-    .community a span{}
-    
-    .help a span{}
-    .breed .img-holder p{}
-    .help a{}
-    .help a img{}
-    .fold .address a span{font-size: 11px;}
+    .address a span{font-size: 11px;}
 
+    .fold, #partners {
+        margin-bottom: 60px;
+    }
+
+    .becomeaddict .ctas .pancakeswap {
+        margin-bottom: 8px;
+    }
+
+    .address .copy-to-clipboard span {
+        font-size: 12px;
+    }
+
+    .address .copy-to-clipboard {
+        padding: 8px 8px;
+    }
+
+    .addresses {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width : 320px) {

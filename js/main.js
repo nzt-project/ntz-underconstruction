@@ -19,22 +19,21 @@ MAIN = {
 		     }, 500);
 		});
 
-        //pie
-        var ctxP = document.getElementById("pieChart").getContext('2d');
-        var myPieChart = new Chart(ctxP, {
-            type: 'pie',
-            data: {
-                labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
-                datasets: [{
-                    data: [300, 50, 100, 40, 120],
-                    backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
-                    hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
-                }]
-            },
-            options: {
-                responsive: true
-            }
-        });
+		$(".faq-btn").attr("aria-expanded", "false"),
+		$(".faq-btn").on("click", (function () {
+				var e = $(this)
+					, t = e.attr("aria-expanded");
+				e.attr("aria-expanded", "true" === t ? "false" : "true")
+			}
+			)),
+			$(document).on("click", 'a[href^="#"]', (function (e) {
+				e.preventDefault(),
+					$("html, body").animate({
+						scrollTop: $($.attr(this, "href")).offset().top
+					}, 500)
+			}
+			)),
+			$(window).width() < 580 && $(".faq h2").html("FAQ");
 	}
 }
 
