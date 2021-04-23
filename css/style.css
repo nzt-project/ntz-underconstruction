@@ -481,7 +481,7 @@ footer .contact {
         position: absolute;
         display: block;
         height: auto;
-        right: 1%;
+        right: -6%;
         bottom: -280px;
      }
 
@@ -564,7 +564,10 @@ footer .contact {
     padding-top: 40px;
     margin-bottom: 20px !important;
 }
-   
+    .fold-hb .container {
+        background-image: none !important;
+        height: 350px;
+    }
     
     footer{height:auto;}
     footer .logo{text-align: center;}
@@ -607,7 +610,6 @@ footer .contact {
         margin-top: 40px;
         display: block;
     }
-
 
 
 }
@@ -701,6 +703,11 @@ footer img {
         width: 100%;
         margin-bottom: 12px;
         text-align: center;
+    }
+
+    .fold-hb .container {
+        background-image: none !important;
+        height: 300px;
     }
     
 }
