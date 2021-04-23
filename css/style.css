@@ -345,6 +345,7 @@ footer .contact {
 #parners .container .row img {
     margin-top: 50px;
     width: 40%;
+    margin-bottom: 20px;
 }
 
 footer {
@@ -357,6 +358,40 @@ footer {
 footer img {
     width: 5%;
     height: 5%;
+}
+
+#faq h2{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color:#ffffff
+}
+
+#faq .panel-heading h4.panel-title {
+    height: 25px;
+}
+
+#faq {
+    color: black;
+    font-family: 'Cera Pro';
+}
+
+#faq a {
+    text-decoration: none;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    content: "-"; /* "play" icon */
+    float: right;
+    color: #FF3939;
+    font-size: 18px;
+    line-height: 22px;
+    /* rotate "play" icon from > (right arrow) to down arrow */
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+    content: "+";
+    color: #454444;
 }
 
 @media only screen and (max-width: 1464px){
