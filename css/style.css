@@ -35,33 +35,63 @@ header {
     position: relative;
     z-index: 2;
 }
-header nav{}
-    header nav a {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #ffffff !important;
-        display: inline-block;
-        margin-right: 26px;
-        text-decoration: none !important;
-        -webkit-transition: all .25s ease;
-        -o-transition: all .25s ease;
-        transition: all .25s ease;
-    }
-header nav a:hover{opacity:0.6;}
-    header nav .left {
-        display: inline-block;
-        margin: 26px 0;
-    }
-    header nav .right {
-        float: right;
-        margin: 60px 0;
-    }
-header nav .colored{color: #FB743E !important}
 
-header .mainLogo img {
-    height: 70px;
-}
+    header nav {
+    }
+
+        header nav a {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff !important;
+            display: inline-block;
+            margin-right: 26px;
+            text-decoration: none !important;
+            -webkit-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s ease;
+        }
+
+            header nav a:hover {
+                opacity: 0.6;
+            }
+
+        header nav .left {
+            display: inline-block;
+            margin: 36px 0;
+        }
+
+        header nav .right {
+            float: right;
+            margin: 50px 0;
+        }
+
+            header nav .right .menuBtn {
+                background-color: #000000;
+                border: solid;
+                border-radius: 50px 50px 50px 50px;
+                border-width: 1px;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+            }
+
+            header nav .right button:hover {
+                -webkit-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                transform: scale(1.02)
+            }
+
+        header nav .colored {
+            color: #FB743E !important
+        }
+
+    header .mainLogo img {
+        height: 70px;
+    }
 
 .textRed {
     color: #FF3939 !important;
@@ -76,16 +106,20 @@ header .mainLogo img {
     padding-top: 76px;
     margin-top: 100px;
 }
-.fold .logo{}
-.fold h1{
-    font-weight: bold;
-    font-size: 42px;
-    line-height: 52px;
-    letter-spacing: 0.1em;
-    color: #FFFFFF;
-    margin: 38px 0 21px 0;
-    padding-left: 30px;
-}
+
+    .fold .logo {
+    }
+
+    .fold h1 {
+        font-weight: bold;
+        font-size: 42px;
+        line-height: 52px;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+        margin: 38px 0 21px 0;
+        padding-left: 30px;
+    }
+
     .fold h2 {
         font-weight: normal;
         margin: 0 0 19px 0;
@@ -101,22 +135,135 @@ header .mainLogo img {
         transition: all .25s ease;
     }
 
-.fold h2 i {
-    font-weight: 600;
+        .fold h2 i {
+            font-weight: 600;
+            font-style: normal;
+        }
+
+.becomeaddict {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+    .becomeaddict .ctas {
+        padding-left: 30px;
+        margin-bottom: 28px;
+    }
+
+        .becomeaddict .ctas .pancakeswap {
+            padding: 14px 24px 12px 24px !important;
+            min-width: 200px;
+        }
+
+        .becomeaddict .ctas h3 {
+            color: #FFFFFF;
+            opacity: .5;
+        }
+
+        .becomeaddict .ctas .pancakeswap {
+            text-align: center;
+            color: #000000;
+            padding: 16px 32px;
+            background: #fff;
+            border-radius: 50px;
+            opacity: 1;
+            -webkit-transition: all .25s ease;
+            -o-transition: all .25s ease;
+            transition: all .25s ease;
+        }
+
+            .becomeaddict .ctas .pancakeswap:hover {
+                -webkit-transform: scale(1.02);
+                -ms-transform: scale(1.02);
+                transform: scale(1.02)
+            }
+
+        .becomeaddict .ctas a {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            margin-right: 16px;
+            text-decoration: none !important;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+            .becomeaddict .ctas a:last-child {
+                margin-right: 0;
+            }
+
+    .becomeaddict .address div {
+        display: inline-block;
+        margin: 0 25px;
+    }
+
+.address .logo {
+    height: 75px;
+}
+
+.address div h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: left;
+    margin: 20px 0 0;
+    text-align: left;
+    display: block;
+    padding: 14px 0 0 0;
+    display: inline-block;
+}
+
+.address div p {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
     font-style: normal;
+    padding: 14px 16px 0 0;
+    margin: 12px 0 0;
+    cursor: pointer;
 }
 
-.logoLeft {
-    position:absolute; 
-    left:12%; 
-    top: 81%;
+.address .contract-link {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 20px 0 0;
+    /*display: inline-block;*/
 }
 
-.logoRight {
-    position: absolute;
-    right: 20%;
-    top: 95%;
+.address .copy-to-clipboard {
+    padding: 16px 20px;
+    display: block;
 }
+
+    .address .copy-to-clipboard i {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        font-style: normal;
+        padding: 14px 16px;
+        display: block;
+        margin: 12px 0 0;
+        cursor: pointer;
+    }
+
+    .address .copy-to-clipboard a {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        font-style: normal;
+        cursor: pointer;
+        text-decoration: underline;
+        text-underline-offset: 10px;
+    }
+
+    .address .copy-to-clipboard i img {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -3px;
+        margin-right: 6px;
+    }
 
 .scheme {
     vertical-align: middle;
@@ -154,7 +301,7 @@ header .mainLogo img {
 }
 
 .scheme-two h4:before {
-    background-image: url('../images/rombi.png');
+    background-image: url('../images/needle.svg');
     top: -20px;
     left: -20px;
     background-size: 70px 70px;
@@ -190,33 +337,53 @@ footer .contact {
 }
 
 
+.fold-hb .container {
+    position: relative;
+    background: url('../images/main screen.svg')no-repeat;
+    background-size: 100%;
+    height: 650px;
+}
+
+.fold-hb .top {
+    margin-top: 25%;
+    margin-left: 50px;
+}
+
+.fold-hb .low {
+}
+
+
 .fold-hb {
-    background: url('../images/main screen.svg') no-repeat center center;
-    background-size: cover;
-    padding: 350px 0;
+    /*background: url('../images/main screen.svg') no-repeat center center;*/
+    /* background-size: cover;*/
+    /*background-size: 100% auto;*/
+    /*padding: 350px 0;*/
     /*height: 700px;
     background-repeat: no-repeat;*/
-    background-size: 80%;
+    /*background-size: 80%;*/
 }
 
-.fold-hb .logo{
-    width: 206px;
-}
-.fold-hb .details{
-    margin-top: 82px;
-}
-.fold-hb h3{
-    font-size: 24px;
-    line-height: 30px;
-    color: #FFFFFF;
-    font-weight: 400;
-    margin: 30px 0 14px;
-}
-.fold-hb h3 strong{
-    font-weight: 600;
-}
+    .fold-hb .logo {
+        width: 206px;
+    }
 
-.fold-hb h2 {
+    .fold-hb .details {
+        margin-top: 82px;
+    }
+
+    .fold-hb h3 {
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        font-weight: 400;
+        margin: 30px 0 14px;
+    }
+
+        .fold-hb h3 strong {
+            font-weight: 600;
+        }
+
+    .fold-hb h2 {
         font-weight: normal;
         margin: 0 0 19px 0;
         padding-left: 30px;
@@ -229,27 +396,33 @@ footer .contact {
         -webkit-transition: all .25s ease;
         -o-transition: all .25s ease;
         transition: all .25s ease;
-}
+    }
 
-.fold-hb h2 i {
-     font-weight: 600;
-     font-style: normal;
-}
+        .fold-hb h2 i {
+            font-weight: 600;
+            font-style: normal;
+        }
 
-.fold-hb h4{
-    font-size: 16px;
-    line-height: 22px;
-    color: #ffffff;
-    text-align: right;
-    margin: 0 0 8px 0;
-}
-.fold-hb span{
-    font-size: 16px;
-    line-height: 27px;
-    text-align: right;
-    color: #ffffff;
-    margin: 0;
-    display: block;
+    .fold-hb h4 {
+        font-size: 16px;
+        line-height: 22px;
+        color: #ffffff;
+        text-align: right;
+        margin: 0 0 8px 0;
+    }
+
+    .fold-hb span {
+        font-size: 16px;
+        line-height: 27px;
+        text-align: right;
+        color: #ffffff;
+        margin: 0;
+        display: block;
+    }
+
+.section-headline {
+    text-align: center;
+    margin: 0 0 40px;
 }
 
 
@@ -259,12 +432,38 @@ footer .contact {
 }
 
 @media only screen and (max-width : 1200px) {
-   
 
+    .becomeaddict .ctas a {
+        margin-right: 22px;
+        font-size: 18px;
+    }
+
+        .becomeaddict .ctas a:last-child {
+            margin: 15px 50px 0px 0px;
+        }
+
+    .fold-hb .container {
+        position: relative;
+        background: url('../images/main screen.svg')no-repeat;
+        background-size: 100%;
+        height: 550px;
+    }
 }
 
 @media only screen and (min-width : 992px){
-    header nav{display: block !important;}
+    header nav {
+        display: block !important;
+    }
+
+    .fold-hb .top-text {
+        width: 450px;
+        margin-left: 15%;
+    }
+
+    .fold-hb .bottom-text {
+        width: 380px;
+        margin-left: 17.1%;
+    }
 }
 
 @media only screen and (max-width : 992px) {
@@ -338,6 +537,40 @@ footer .contact {
     margin: 40px auto 0;
     float: none;
 }
+
+    .becomeaddict .ctas a {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .becomeaddict .ctas {
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    .fold, .becomeaddict {
+        margin-bottom: 60px;
+    }
+
+        .becomeaddict .ctas a:last-child {
+            margin: 0px 0px 0px 0px;
+        }
+
+
+
+    .address div {
+        width: 100%;
+        margin: 0 0 36px 0 !important;
+    }
+
+    .address .logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 40px;
+        display: block;
+    }
+
 
 
 }
@@ -426,6 +659,12 @@ footer img {
     .fold h2 {
         font-size: 22px;
     }
+
+    .becomeaddict .ctas a {
+        width: 100%;
+        margin-bottom: 12px;
+        text-align: center;
+    }
     
 }
 
@@ -436,17 +675,25 @@ footer img {
     font-size: 18px;
     line-height: 1.25;
 }
-    .section-headline{}
-    .proofs a span{}
-    .proofs a{}
-    .community a span{}
     
-    .help a span{}
-    .breed .img-holder p{}
-    .help a{}
-    .help a img{}
     .fold .address a span{font-size: 11px;}
 
+
+    .becomeaddict .ctas .pancakeswap {
+        margin-bottom: 8px;
+    }
+
+    .address .copy-to-clipboard span {
+        font-size: 12px;
+    }
+
+    .address .copy-to-clipboard {
+        padding: 8px 8px;
+    }
+
+    .addresses {
+        margin-bottom: 40px;
+    }
 }
 
 @media only screen and (max-width : 320px) {
