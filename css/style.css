@@ -265,6 +265,98 @@ header {
         margin-right: 6px;
     }
 
+.rewards {
+    margin: 105px 0 135px
+}
+
+.rewards h3 {
+    text-align: left;
+    font-size: 35px
+}
+
+    .rewards .container div {
+        /*display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 70%;
+        background: #eee;
+        margin: 10px auto;
+        position: relative;*/
+        text-align: center;
+    }
+
+.box {
+    width: 380px;
+    height: 80px;
+    border-radius: 50px 50px 50px 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    position: relative;
+    margin-bottom: 75px;
+    display: block;
+    -webkit-transition: all .1s cubic-bezier(1,0,0,1) !important;
+    -moz-transition: all .1s cubic-bezier(1,0,0,1) !important;
+    -o-transition: all .1s cubic-bezier(1,0,0,1) !important;
+    -ms-transition: all .1s cubic-bezier(1,0,0,1) !important;
+    transition: all .1s cubic-bezier(1,0,0,1) !important;
+}
+
+    .box:hover {
+        box-shadow: 0 4px 11px 3px #eee
+    }
+
+    .box > p {
+        font-family: Lato-Bold;
+        color: #ffffff;
+        padding: 30px 30px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+.adrBSC {
+    margin-top: 50px;
+    display: inline-block;
+    max-width: 50%
+}
+
+.address-l {
+    margin-left: -75px
+}
+
+.address-r {
+    margin-left: 100px
+}
+
+.bsc-address {
+    font-family: Lato-Light
+}
+
+.round {
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    position: absolute;
+    top: -55px;
+    right: -55px;
+    text-align:center;
+}
+
+.round p {
+    margin: 18px 0 0
+}
+
+.nzt-win {
+    font-family: Lato-Black
+}
+
+.span-win {
+    font-size: 20px;
+    font-family: Lato-Bold
+}
+
 .scheme {
     vertical-align: middle;
     position: relative;
@@ -501,6 +593,19 @@ footer .contact {
         width: 380px;
         margin-left: 17.1%;
     }
+
+    .rewards {
+        margin-top: 75px;
+        margin-bottom: 85px
+    }
+
+        .rewards h3 {
+            font-size: 32px
+        }
+
+    .address-l {
+        margin-left: -55px
+    }
 }
 
 @media only screen and (max-width : 992px) {
@@ -557,13 +662,13 @@ footer .contact {
         }
     header .container{position:relative;}
     .fold h2{
-    padding-left: 0;
-}
+        padding-left: 0;
+    }
     
-.fold{
-    padding-top: 40px;
-    margin-bottom: 20px !important;
-}
+    .fold{
+        padding-top: 40px;
+        margin-bottom: 20px !important;
+    }
     .fold-hb .container {
         background-image: none !important;
         height: 350px;
@@ -574,9 +679,9 @@ footer .contact {
     .hide-on-mobile{display: none;}
     .fold h1{padding-left: 0;margin-top: 0;/*display: none;*/}
     footer .contact{
-    margin: 40px auto 0;
-    float: none;
-}
+        margin: 40px auto 0;
+        float: none;
+    }
 
     .becomeaddict .ctas a {
         width: 50%;
@@ -593,11 +698,9 @@ footer .contact {
         margin-bottom: 60px;
     }
 
-        .becomeaddict .ctas a:last-child {
-            margin: 0px 0px 0px 0px;
-        }
-
-
+    .becomeaddict .ctas a:last-child {
+        margin: 0px 0px 0px 0px;
+    }
 
     .address div {
         width: 100%;
@@ -611,6 +714,19 @@ footer .contact {
         display: block;
     }
 
+    .adrBSC {
+        display: block;
+        max-width: 100%
+    }
+
+    .box {
+        width: 100%
+    }
+
+    .address-l, .address-r {
+        margin-left: -45px;
+        padding: 0 90px
+    }
 
 }
 
@@ -737,6 +853,19 @@ footer img {
 
     .addresses {
         margin-bottom: 40px;
+    }
+
+    .address-l {
+        padding: 10px 40px 0
+    }
+
+    .address-r {
+        padding: 0 40px
+    }
+
+    .rewards {
+        margin-top: 35px;
+        margin-bottom: 35px
     }
 }
 
