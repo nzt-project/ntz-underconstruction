@@ -120,59 +120,59 @@ MAIN = {
             }
             ))
         }
-            , function (e, t) {
-                e.exports.getLastRewards = function (e) {
-                    $.ajax("https://mainnet.infura.io/v3/1a41bb7ab615464cbcd3cd48ece28b5d", {
-                        data: JSON.stringify({
-                            jsonrpc: "2.0",
-                            method: "eth_getLogs",
-                            params: [{
-                                address: "0x3a9fff453d50d4ac52a6890647b823379ba36b9e",
-                                fromBlock: "0x912ce3",
-                                toBlock: "latest",
-                                topics: ["0x9c2270628a9b29d30ae96b6c4c14ed646ee134febdce38a5b77f2bde9cea2e20"]
-                            }],
-                            id: 1
-                        }),
+            //, function (e, t) {
+            //    e.exports.getLastRewards = function (e) {
+            //        $.ajax("https://mainnet.infura.io/v3/1a41bb7ab615464cbcd3cd48ece28b5d", {
+            //            data: JSON.stringify({
+            //                jsonrpc: "2.0",
+            //                method: "eth_getLogs",
+            //                params: [{
+            //                    address: "0x3a9fff453d50d4ac52a6890647b823379ba36b9e",
+            //                    fromBlock: "0x912ce3",
+            //                    toBlock: "latest",
+            //                    topics: ["0x9c2270628a9b29d30ae96b6c4c14ed646ee134febdce38a5b77f2bde9cea2e20"]
+            //                }],
+            //                id: 1
+            //            }),
 
-                        contentType: "application/json",
-                        type: "POST"
-                    //$.ajax("https://bsc.getblock.io/mainnet/?api_key=a90c7e39-96ec-402d-98a0-906d7fd95ad7", {
-                    //    data: JSON.stringify({
-                    //        jsonrpc: "2.0",
-                    //        method: "eth_getLogs",
-                    //        params: [{
-                    //            address: "0x643310aff0ff1fd10feffa9a5197ababbfef0797",
-                    //            fromBlock: "0x6652B9",
-                    //            toBlock: "latest",
-                    //            topics: ["0x9c2270628a9b29d30ae96b6c4c14ed646ee134febdce38a5b77f2bde9cea2e20"]
-                    //        }],
-                    //        id: 1
-                    //    }),
-                    //    header: {
-                    //        //'x-api-key': 'a90c7e39-96ec-402d-98a0-906d7fd95ad7',
-                    //        //"Access-Control-Allow-Origin": "x-requested-with"
-                    //        'Access-Control-Allow-Origin': 'https://bsc.getblock.io/mainnet/?api_key=a90c7e39-96ec-402d-98a0-906d7fd95ad7'
-                    //    },
-                    //    contentType: "application/json",
-                    //    //dataType: 'jsonp',
-                    //    crossDomain: true,
-                    //    cache: false,
-                    //    type: "POST",
-                    }).done((function (t) {
-                        e(t.result.slice(-6).reverse().map(e => {
-                            return {
-                                winner: (t = e).topics[1].replace("0x000000000000000000000000", ""),
-                                amount: parseInt(t.data),
-                                tx: t.transactionHash
-                            };
-                            var t
-                        }
-                        ))
-                    }
-                    ))
-                }
-            }
+            //            contentType: "application/json",
+            //            type: "POST"
+            //        //$.ajax("https://bsc.getblock.io/mainnet/?api_key=a90c7e39-96ec-402d-98a0-906d7fd95ad7", {
+            //        //    data: JSON.stringify({
+            //        //        jsonrpc: "2.0",
+            //        //        method: "eth_getLogs",
+            //        //        params: [{
+            //        //            address: "0x643310aff0ff1fd10feffa9a5197ababbfef0797",
+            //        //            fromBlock: "0x6652B9",
+            //        //            toBlock: "latest",
+            //        //            topics: ["0x9c2270628a9b29d30ae96b6c4c14ed646ee134febdce38a5b77f2bde9cea2e20"]
+            //        //        }],
+            //        //        id: 1
+            //        //    }),
+            //        //    header: {
+            //        //        //'x-api-key': 'a90c7e39-96ec-402d-98a0-906d7fd95ad7',
+            //        //        //"Access-Control-Allow-Origin": "x-requested-with"
+            //        //        'Access-Control-Allow-Origin': 'https://bsc.getblock.io/mainnet/?api_key=a90c7e39-96ec-402d-98a0-906d7fd95ad7'
+            //        //    },
+            //        //    contentType: "application/json",
+            //        //    //dataType: 'jsonp',
+            //        //    crossDomain: true,
+            //        //    cache: false,
+            //        //    type: "POST",
+            //        }).done((function (t) {
+            //            e(t.result.slice(-6).reverse().map(e => {
+            //                return {
+            //                    winner: (t = e).topics[1].replace("0x000000000000000000000000", ""),
+            //                    amount: parseInt(t.data),
+            //                    tx: t.transactionHash
+            //                };
+            //                var t
+            //            }
+            //            ))
+            //        }
+            //        ))
+            //    }
+            //}
         ]);
 
 	}
