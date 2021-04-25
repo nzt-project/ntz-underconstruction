@@ -535,6 +535,52 @@ footer .contact {
     margin: 0 0 40px;
 }
 
+/*#presale {
+    border: 1px solid #ffffff;
+}*/
+
+.countdown {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    /*border: 1px solid #ffffff;*/
+}
+
+.countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+    padding: 20px;
+    text-align: center;
+    margin: 1px; 
+    display: inline-block;
+}
+
+.countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+      display: block;
+      font-size: 40px;
+}
+
+.countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+    display: block;
+    font-size: 20px;
+ }
+
+
+.presale {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.presale:hover{
+    color:#ffffff;
+}
+
+.presale:visited {
+   color: #ffffff;
+}
+.presale:active {
+    color: #ffffff;
+}
 
 @media only screen and (min-width : 1200px) {
     .fold h2{padding-right:100px;}
@@ -866,6 +912,16 @@ footer img {
     .rewards {
         margin-top: 35px;
         margin-bottom: 35px
+    }
+
+    .countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+        padding: 10px;
+        text-align: center;
+        margin: 1px;
+        /*width: 20%;*/
+        /*text-align: left;*/
+        /*border: 1px solid gray;*/
+        display: inline-block;
     }
 }
 

@@ -4,7 +4,8 @@ MAIN = {
 
 		$(document).on('click', 'a[href=""], a[href^="#"]', function (e) {
 		    e.preventDefault();
-		});
+        });
+
 
 		$('.hamburger-icon').click (function(){
             $(this).toggleClass('open');
