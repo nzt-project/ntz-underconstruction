@@ -156,16 +156,18 @@ header {
         }
 
         .becomeaddict .ctas h3 {
-            color: #FFFFFF;
+            color: #ffffff;
             opacity: .5;
         }
 
         .becomeaddict .ctas .pancakeswap {
             text-align: center;
-            color: #000000;
+            color: #ffffff;
             padding: 16px 32px;
-            background: #fff;
+            background: #000000;
             border-radius: 50px;
+            border-style:solid;
+            border-width:1px;
             opacity: 1;
             -webkit-transition: all .25s ease;
             -o-transition: all .25s ease;
@@ -535,10 +537,6 @@ footer .contact {
     margin: 0 0 40px;
 }
 
-/*#presale {
-    border: 1px solid #ffffff;
-}*/
-
 .countdown {
     text-align: center;
     display: inline-block;
@@ -607,6 +605,53 @@ footer .contact {
 #pancake {
     margin: 35px auto 16px !important;
     height: 50px !important;
+}
+
+#accordion .panel {
+    border: solid;
+    border-radius: 5px;
+    border-color: #ffffff;
+    border-width: 1px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    background: #000000;
+    padding: 25px 50px 25px 25px;
+    color: #ffffff;
+}
+
+#accordion .panel-heading {
+    padding: 0;
+    border-radius: 5px;
+    background: #000000;
+}
+
+#accordion .panel-title a {
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+    content: "" !important;
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+    color: #ffffff !important;
+}
+
+#accordion .panel-body {
+    padding: 20px 30px;
+    background: rgba(0,0,0,0.1);
+    font-size: 15px;
+    color: #fff;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: none;
+    border-radius: 5px;
 }
 
 @media only screen and (min-width : 1200px) {
