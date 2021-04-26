@@ -1,6 +1,3 @@
-//const $ = elem => document.querySelector(elem);
-//console.log(selector)
-
 
 const countdown = function (_config) {
   const tarDate = document.getElementById('countdown').getAttribute('data-date').split('-'); /*$(_config.target).getAttribute('data-date').split('-');*/
@@ -32,11 +29,6 @@ const countdown = function (_config) {
   const countDownDate = new Date(year, month-1, day, tarhour, tarmin, 0, 0).getTime();
 
 
-  //$(_config.target + ' .day .word').innerHTML = _config.dayWord;
-  //$(_config.target+' .hour .word').innerHTML = _config.hourWord;
-  //$(_config.target+' .min .word').innerHTML = _config.minWord;
-  //$(_config.target+' .sec .word').innerHTML = _config.secWord; 
-
   const updateTime = () => {
     // Get todays date and time
     const now = new Date();
@@ -52,13 +44,9 @@ const countdown = function (_config) {
 
     requestAnimationFrame(updateTime);
 
-      //$(_config.target + ' .day .num').innerHTML = addZero(days);
      document.getElementById('day').innerHTML = addZero(days);
-      //$(_config.target + ' .hour .num').innerHTML = addZero(hours);
      document.getElementById('hour').innerHTML = addZero(hours);
-     // $(_config.target + ' .min .num').innerHTML = addZero(minutes);
      document.getElementById('min').innerHTML = addZero(minutes);
-      //$(_config.target + ' .sec .num').innerHTML = addZero(seconds);
      document.getElementById('sec').innerHTML = addZero(seconds);
 
     // If the count down is over, write some text

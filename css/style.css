@@ -97,6 +97,18 @@ header {
     color: #FF3939 !important;
 }
 
+.textYellow {
+    color: #eef105 !important;
+}
+
+.textBlue {
+    color: #2785d5 !important;
+}
+
+.textGreen {
+    color: #0aa104 !important;
+}
+
 .text-right {
     text-align: right;
 }
@@ -142,7 +154,26 @@ header {
 
 .becomeaddict {
     text-align: center;
+    margin-bottom: 60px;
+    padding-top: 76px;
+    margin-top: 100px;
+}
+
+#presale {
+    text-align: center;
     margin-bottom: 80px;
+    padding-top: 0px !important;
+    margin-top: 0px;
+}
+
+.becomeaddict h1 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 38px 0 21px 0;
+    padding-left: 30px;
 }
 
     .becomeaddict .ctas {
@@ -199,6 +230,9 @@ header {
         display: inline-block;
         margin: 0 25px;
     }
+
+
+
 
 .address .logo {
     height: 75px;
@@ -403,6 +437,54 @@ header {
     width: 70px;
     height: 70px;
     content: "";
+}
+
+.tokens {
+    vertical-align: middle;
+    position: relative;
+    letter-spacing: .2px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    margin-top: 50px;
+    /*font-family: initial !important;
+    font-size: initial !important;*/
+}
+
+    .tokens h4 {
+        margin-bottom: 39px;
+        padding-left: 70px;
+    }
+
+.tokens-one h4:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-repeat: no-repeat
+}
+
+
+.tokens {
+    vertical-align: middle;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: .2px;
+    margin-bottom: 35px;
+    color: #ffffff;
+    margin-top: 50px;
+}
+
+    .tokens h4 {
+        margin-bottom: 39px;
+        padding-left: 70px
+    }
+
+.tokens-one h4:before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-repeat: no-repeat
 }
 
 footer .logo{
