@@ -105,6 +105,10 @@ header {
     color: #2785d5 !important;
 }
 
+.textLightBlue {
+    color: #0abae1 !important;
+}
+
 .textGreen {
     color: #0aa104 !important;
 }
@@ -126,7 +130,7 @@ header {
         font-weight: bold;
         font-size: 42px;
         line-height: 52px;
-        letter-spacing: 0.1em;
+        letter-spacing: 0;
         color: #FFFFFF;
         margin: 38px 0 21px 0;
         padding-left: 30px;
@@ -136,8 +140,8 @@ header {
         font-weight: normal;
         margin: 0 0 19px 0;
         padding-left: 30px;
-        font-size: 24px;
-        line-height: 22px;
+        font-size: 22px;
+        line-height: 1.25em;
         color: #ffffff !important;
         display: inline-block;
         /*margin-right: 26px;*/
@@ -430,7 +434,7 @@ header {
 
 .scheme-two h4:before {
     background-image: url('../images/needle.svg');
-    top: -20px;
+    top: -10px;
     left: -20px;
     background-size: 70px 70px;
     display: inline-block;
