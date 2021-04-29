@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
 	<meta name="description" content="NZT description">
-	<meta name="keywords" content="nzt, nzt token, token, cryptocurrency, crypto, doge, hoge, shiba, coin, husky, akita, chowchow, feg, poodl" />
+	<meta name="keywords" content="nzt, nzt token, token, cryptocurrency, crypto, doge, hoge, shiba, coin, husky, akita, chowchow, feg, poodl,RFI" />
 	<meta name="robots" content="index,follow" />
 
 	<!-- Title -->
@@ -16,6 +16,7 @@
 	<!-- Link -->
 	<link rel="shortcut icon" href="images/nzt-48-transparent-white.svg">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"/>
 	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -71,7 +72,26 @@
 				<a class="textRed">01.05.2021</a> AT <a class="textRed">15:00</a> UTC +0
 			</h2>
 			<h2 class="" data-aos="fade-up">
-				<a href="https://dxsale.network/" target="_blank" class="presale">JOIN US ON DxSALE</a>
+				<p>
+					Presale price: 1 BNB = 1000 NZT
+				</p>
+				<p>
+					Presale min.purchase = 0,1 BNB (100 NZT)
+				</p>
+				<p>
+					Presale max.purchase = 1 BNB (1000 NZT)
+				</p>
+				<p>
+					Soft cap: 150 BNB
+				</p>
+				<p>
+					Hard cap: 300 BNB
+				</p>
+				<p>
+					Unsold tokens: Burn 🔥
+				</p>
+				</p>
+				<a href="https://dxsale.network/" target="_blank" class="presale textRed">JOIN US ON DxSALE</a>
 			</h2>
 		</div>
 	</section>
@@ -159,16 +179,16 @@
 
 			<div class="addresses">
 				<div class="address" data-aos="zoom-in" data-aos-delay="300">
-					<div><img src="images/logo_bsc.png" alt="Binance Smart Chain logo" class="logo"></div>
+					<div><img src="images/bsc_logo.svg" alt="Binance Smart Chain logo" class="logo"></div>
 					<div>
 						<h3>Contract Address <strong>(BSC)</strong></h3>
-						<p style="text-decoration: underline;">COMING SOON</p>
+						<p>0x18c4ca6aeb6581c8edd4a8d596d5f4a331d61eb8</p>
 					</div>
 					<div class="copy-to-clipboard bsc">
-						<a href="https://www.bscscan.com" class="contract-link" target="_blank">
+						<a href="https://bscscan.com/token/0x18c4ca6aeb6581c8edd4a8d596d5f4a331d61eb8" class="contract-link" target="_blank">
 							View Contract
 						</a>
-						<i data-clipboard-text="testAddress">
+						<i data-clipboard-text="0x18c4ca6aeb6581c8edd4a8d596d5f4a331d61eb8">
 							<img src="images/copy-ico.svg" alt="Copy icon">
 							<strong>
 								Copy
@@ -185,23 +205,61 @@
 		<div class="container">
 
 			<h1 class="section-headline" data-aos="fade" data-aos-delay="200">NZT-48 Token distribution</h1>
-			<div class="col-md-6 pull-left">
+			<div class="col-sm-12 col-md-5 col-md-offset-1 pull-left">
 
-				<img src="images/chart.png" alt="NZT tokens" class="logo" data-aos="fade">
+				<div class="tokens tokens-one" data-aos="fade" data-aos-delay="400">
 
-			</div>
-
-			<div class="col-sm-12 col-md-6 pull-right">
-
-				<div class="tokens tokes-one" data-aos="fade" data-aos-delay="400">
-					<h4>Total supply:<strong> 1,000,000 NZT</strong></h4>
-					<h4>Tokenomics:</h4>
-					<h4><span class="textYellow">25% </span><strong> presale and<span class="textYellow"> 22,5% </span>to liquidity</strong></h4>
-					<h4><span class="textRed">40%</span><strong> burn locked (5% of tokens will be unlocked each month and burnt) </strong></h4>
+					<h4><span class="textYellow">30% </span><strong> presale and<span class="textYellow"> 27% </span>to liquidity</strong></h4>
+					<div id="progressPresale">
+						<div id="fillPresale">
+							<div id="barpercentPresale">
+								<!--<h4>47,5%</h4>-->
+							</div>
+						</div>
+					</div>
+					<br />
+					<h4><span class="textRed">30%</span><strong> burn locked (5% of tokens will be unlocked each month and burnt) </strong></h4>
+					<div id="progressBurn">
+						<div id="fillBurn">
+							<div id="barpercentBurn">
+								<!--<h4>40%</h4>-->
+							</div>
+						</div>
+					</div>
+					<br />
 					<h4><span class="textLightBlue">5%</span><strong> community promotions</strong></h4>
-					<h4><span class="textBlue">2,5%</span><strong> marketing</strong></h4>
+					<div id="progressCommunityProm">
+						<div id="fillCommunityProm">
+							<div id="barpercentCommunityProm">
+								<!--<h4>5%</h4>-->
+							</div>
+						</div>
+					</div>
+					<br />
+					<h4><span class="textBlue">3%</span><strong> marketing</strong></h4>
+					<div id="progressMarkt">
+						<div id="fillMarkt">
+							<div id="barpercentMarkt">
+								<!--<h4>2.5%</h4>-->
+							</div>
+						</div>
+					</div>
+					<br />
 					<h4><span class="textGreen">5%</span> team</h4>
+					<div id="progressTeam">
+						<div id="fillTeam">
+							<div id="barpercentTeam">
+								<!--<h4>5%</h4>-->
+							</div>
+						</div>
+					</div>
+
 				</div>
+			</div>
+			<div class="col-md-5 col-md-offset-1">
+
+				<img src="images/piechart.svg" alt="NZT tokens" class="tokens-two logo" data-aos="fade" data-aos-delay="400">
+
 			</div>
 
 		</div>
@@ -223,16 +281,18 @@
 			<a href="https://www.coingecko.com/en" tager="_blank" data-aos-delay="200" data-aos="fade">
 				<img src="images/cg-logo.png" alt="BSC logo" />
 			</a>
-			<a href="https://dex.guru/token/0xe742c2b5cd1585ea73da842d7d6b2d5dabddec00-bsc" tager="_blank" data-aos-delay="200" data-aos="fade">
+			<a href="https://dex.guru/token/0x18c4ca6aeb6581c8edd4a8d596d5f4a331d61eb8-bsc" tager="_blank" data-aos-delay="200" data-aos="fade">
 				<img src="images/transparent-horizontal-logo-black-background.png" alt="BSC logo" />
+			</a>
+			<a href="https://bscscan.com/token/0x18c4ca6aeb6581c8edd4a8d596d5f4a331d61eb8" tager="_blank" data-aos-delay="200" data-aos="fade">
+				<img src="images/BscScan-logo-light.png" alt="BSC logo" />
+			</a>
+			<a href="https://coinmarketcap.com/" tager="_blank" data-aos-delay="200" data-aos="fade">
+				<img src="images/39501128-e66e2a18-4d6d-11e8-9e16-88655102da6c.png" alt="BSC logo" id="cmc" />
 			</a>
 			<a href="https://dxsale.network/" tager="_blank" data-aos-delay="200" data-aos="fade">
 				<img src="images/q7QNojQV_400x400.png" alt="BSC logo" />
 			</a>
-			<a href="https://coinmarketcap.com/" tager="_blank" data-aos-delay="200" data-aos="fade">
-				<img src="images/cmc-logo.png" alt="BSC logo" />
-			</a>
-
 
 		</div>
 	</section>
@@ -252,7 +312,7 @@
 					<div class="panel-body">
 						Welcome to 💊NZT-48 ($NZT), a BSC-powered token which aims to reward diamond hands, 3% fee is distributed randomly to one of the top 512 hodlers, 3% is burned forever, reducing the total supply.
 						NZT is not your standard RFI token. The main difference between NZT-48 and RFI tokens is that insead of every holder only <span class="textRed">one</span> top 512 holder randomly receives the 3% fee.
-						What's wonderfull about this mechanic is that to make you richer you have to be more active with the token circulation.
+						What's wonderful about this mechanic is that to make you richer you have to be more active with the token circulation.
 					</div>
 				</div>
 			</div>
@@ -276,8 +336,8 @@
 				</div>
 				<div id="collapseEleven" class="panel-collapse collapse">
 					<div class="panel-body">
-						3% from each transaction is sent to a special address in the BSC-network. 
-						This address is completely unacessable by anyone on the blockchain. Tokens sent to this address are considered "lost" or "burned" forever, effectively reducing the total supply.
+						3% from each transaction is sent to a special address in the BSC-network.
+						This address is completely inaccessible by anyone on the blockchain. Tokens sent to this address are considered "lost" or "burned" forever, effectively reducing the total supply.
 					</div>
 				</div>
 			</div>
@@ -289,7 +349,7 @@
 				</div>
 				<div id="collapseTwelwe" class="panel-collapse collapse">
 					<div class="panel-body">
-						The addicts are the NZT-48 holders. It is the community, the people who invest in the token. The junkies are our top 512 holders.
+						The addicts are the NZT-48 holders. It is the community, the people who invest in the token.
 						Junkies are the top 512 hodlers of NZT-48. All of them have a chance to receive 3% of transactions amount when the token is being purchased or sold by others. Bless them.
 					</div>
 				</div>
@@ -333,8 +393,14 @@
 				<img src="images/nzt-48-transparent-white.svg" alt="NZT logo">
 			</div>
 
+			<div class="col-md-8">
+				<a href="" style="pointer-events: none" class="contact disable-select">@NZT-48 2021</a>
+			</div>
+
 		</div>
 	</footer>
+
+	<a id="back-to-top" href="#" class="btn-default btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
@@ -344,6 +410,7 @@
 	<script src="js/aos.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/countdown.js"></script>
+	<script src="js/counter.js"></script>
 	<script>
 		var clipboardEth = new ClipboardJS('.eth.copy-to-clipboard i');
 

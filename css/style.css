@@ -463,12 +463,12 @@ header {
     font-size: initial !important;*/
 }
 
-    .tokens h4 {
-        margin-bottom: 39px;
-        padding-left: 70px;
-    }
+.tokens h4 {
+    /*margin-bottom: 39px;
+        padding-left: 70px;*/
+}
 
-.tokens-one h4:before {
+.tokens-one h4:before, .tokens-two h4:before {
     content: '';
     width: 100px;
     height: 100px;
@@ -476,19 +476,169 @@ header {
     background-repeat: no-repeat
 }
 
-
-    .tokens h4 {
-        margin-bottom: 39px;
-        padding-left: 70px
-    }
-
-.tokens-one h4:before {
-    content: '';
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    background-repeat: no-repeat
+.tokens-two {
+    margin-top: 26px !important;
 }
+
+/* Progress bar */
+#progressPresale {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillPresale {
+    padding: 2px 0;
+    background-color: #eef105; /*Fill colour */
+    width: 57%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentPresale h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+#progressBurn {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillBurn {
+    padding: 2px 0;
+    background-color: #FF3939; /*Fill colour */
+    width: 30%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentBurn h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+#progressCommunityProm {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillCommunityProm {
+    padding: 2px 0;
+    background-color: #0abae1; /*Fill colour */
+    width: 5%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentCommunityProm h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+#progressMarkt {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillMarkt {
+    padding: 2px 0;
+    background-color: #2785d5; /*Fill colour */
+    width: 3%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentMarkt h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+#progressTeam {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillTeam {
+    padding: 2px 0;
+    background-color: #0aa104; /*Fill colour */
+    width: 5%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentTeam h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+/* Fades in animation */
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+}
+/* Animates bar on page load */
+@keyframes proanimate {
+    from {
+        width: 0%;
+    }
+}
+
 
 footer .logo{
     text-align: left;
@@ -515,6 +665,31 @@ footer .contact {
     float: right;
 }
 
+.btn-default {
+    color: #333;
+    background-color: #e6e6e617 !important;
+    border-color: #adadad !important;
+}
+
+.btn-default:hover {
+    color: #333;
+    background-color: #e6e6e617 !important;
+    border-color: #adadad !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+footer {
+    border-radius: 0px; /* Roundness */
+    border-top:solid;
+    border-width: 1px;
+    border-color: #ffffff;
+}
 
 .fold-hb .container {
     position: relative;
@@ -689,6 +864,10 @@ footer .contact {
 
 #pancake {
     margin: 35px auto 16px !important;
+    height: 50px !important;
+}
+#cmc {
+    margin: 35px auto 16px;
     height: 50px !important;
 }
 
@@ -1066,6 +1245,10 @@ footer img {
 
     .address .copy-to-clipboard span {
         font-size: 12px;
+    }
+
+    .address div p{
+        font-size:14px;
     }
 
     .address .copy-to-clipboard {
