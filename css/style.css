@@ -667,15 +667,15 @@ footer .contact {
 
 .btn-default {
     color: #333;
-    background-color: #e6e6e617 !important;
+    background-color: #e6e6e626 !important;
     border-color: #adadad !important;
 }
 
-.btn-default:hover {
-    color: #333;
-    background-color: #e6e6e617 !important;
-    border-color: #adadad !important;
-}
+    .btn-default:hover {
+        color: #333;
+        background-color: #e6e6e626 !important;
+        border-color: #adadad !important;
+    }
 
 .back-to-top {
     position: fixed;
@@ -1066,9 +1066,10 @@ footer {
     footer .logo{text-align: center;}
     .hide-on-mobile{display: none;}
     .fold h1{padding-left: 0;margin-top: 0;/*display: none;*/}
-    footer .contact{
-        margin: 40px auto 0;
-        float: none;
+    footer .contact {
+        /*margin: 40px auto 0 0;*/
+        /*float: none;*/
+        text-align: center !important;
     }
 
     .becomeaddict .ctas a {
@@ -1160,7 +1161,7 @@ footer img {
 }
 
 .panel-heading [data-toggle="collapse"]:after {
-    content: "-"; /* "play" icon */
+    content: ""; /* "play" icon */
     float: right;
     color: #FF3939;
     font-size: 18px;
