@@ -121,6 +121,10 @@ header {
     color: #0aa104 !important;
 }
 
+.textGreen {
+    color: #ffffff !important;
+}
+
 .text-right {
     text-align: right;
 }
@@ -496,7 +500,7 @@ header {
 #fillPresale {
     padding: 2px 0;
     background-color: #eef105; /*Fill colour */
-    width: 57%; /*Bar percentage, change text below also */
+    width: 30%; /*Bar percentage, change text below also */
     border-radius: 25px; /* Roundness */
     animation: proanimate 4s;
 }
@@ -531,6 +535,35 @@ header {
 }
 
 #barpercentBurn h4 {
+    color: #000000; /*Bar percentage text colour */
+    margin: 0;
+    padding: 0;
+    opacity: 1;
+    animation: fadein 3s forwards;
+    text-align: center;
+}
+
+#progressLiquidity {
+    /*width: 45%;*/ /* Bar width */
+    margin: 0 auto;
+    border-radius: 10px; /* Roundness */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ffffff;
+    background-color: #000000; /* Background colour */
+    padding: 7px 5px;
+    /* border: 5px solid #a8a8a8; Border */
+}
+
+#fillLiquidity {
+    padding: 2px 0;
+    background-color: #ffffff; /*Fill colour */
+    width: 20%; /*Bar percentage, change text below also */
+    border-radius: 25px; /* Roundness */
+    animation: proanimate 4s;
+}
+
+#barpercentLiquidity h4 {
     color: #000000; /*Bar percentage text colour */
     margin: 0;
     padding: 0;
