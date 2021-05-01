@@ -616,7 +616,7 @@ header {
 #fillMarkt {
     padding: 2px 0;
     background-color: #2785d5; /*Fill colour */
-    width: 3%; /*Bar percentage, change text below also */
+    width: 2%; /*Bar percentage, change text below also */
     border-radius: 25px; /* Roundness */
     animation: proanimate 4s;
 }
@@ -645,7 +645,7 @@ header {
 #fillTeam {
     padding: 2px 0;
     background-color: #0aa104; /*Fill colour */
-    width: 5%; /*Bar percentage, change text below also */
+    width: 6%; /*Bar percentage, change text below also */
     border-radius: 25px; /* Roundness */
     animation: proanimate 4s;
 }
